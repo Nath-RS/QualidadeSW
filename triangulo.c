@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 // Função para verificar se é possível formar um triângulo
-bool podeFormarTriangulo(double lado1, double lado2, double lado3) {
+bool ehTriangulo(double lado1, double lado2, double lado3) {
     if ((lado1 + lado2 > lado3) && (lado1 + lado3 > lado2) && (lado2 + lado3 > lado1)) {
         return true; // É possível formar um triângulo
     } else {
@@ -12,17 +12,17 @@ bool podeFormarTriangulo(double lado1, double lado2, double lado3) {
 }
 
 // Função para determinar o tipo de triângulo
-void tipoTriangulo(double lado1, double lado2, double lado3) {
-    if (podeFormarTriangulo(lado1, lado2, lado3)) {
+const char* tipoTriangulo(double lado1, double lado2, double lado3) {
+    if (ehTriangulo(lado1, lado2, lado3)) {
         if (lado1 == lado2 && lado2 == lado3) {
-            printf("É um triângulo equilátero.\n");
+            return "Equilátero";
         } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-            printf("É um triângulo isósceles.\n");
+            return "Isósceles";
         } else {
-            printf("É um triângulo escaleno.\n");
+            return "Escaleno";
         }
     } else {
-        printf("Não é possível formar um triângulo com esses lados.\n");
+        return "Inválido";
     }
 }
 
@@ -39,9 +39,8 @@ int main() {
     printf("Digite o valor do terceiro lado: ");
     scanf("%lf", &lado3);
 
-    // Chamar a função para determinar o tipo de triângulo
-    tipoTriangulo(lado1, lado2, lado3);
+    // Chamar a função para determinar o tipo de triângulo e imprimir o resultado
+    printf("O triângulo é do tipo: %s\n", tipoTriangulo(lado1, lado2, lado3));
 
     return 0;
 }
-
