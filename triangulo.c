@@ -6,7 +6,8 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 *******************************************************************************/
 /*teste de caixa preta */
-/* verificar se o código funciona com uma entrada negativa ou com uma entrada positiva*/
+/* verificado se o codigo funciona com uma entrada negativa ou com uma entrada positiva*/
+/* verificado se o codigo funciona com entrada nula, vazia, e caracteres nao numericos*/
 
 
 
@@ -24,7 +25,7 @@ bool ehTriangulo(double lado1, double lado2, double lado3) {
     }
 }
 
-// Funcao para determinar o tipo de tri�ngulo
+// Funcao para determinar o tipo de triangulo
 const char* tipoTriangulo(double lado1, double lado2, double lado3) {
     if (ehTriangulo(lado1, lado2, lado3)) {
         if (lado1 == lado2 && lado2 == lado3) {
@@ -42,13 +43,14 @@ const char* tipoTriangulo(double lado1, double lado2, double lado3) {
 
 
 int main() {
-    //testando com numero negativo
+    
     double lado1, lado2, lado3;
 
     // Solicitar ao usuario os tres lados do triangulo
+	
     printf("Digite o valor do primeiro lado: \n");
     scanf("%lf", &lado1);
-
+	
     printf("Digite o valor do segundo lado: \n");
     scanf("%lf", &lado2);
 
