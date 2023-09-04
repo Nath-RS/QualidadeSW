@@ -24,7 +24,7 @@ bool ehTriangulo(double lado1, double lado2, double lado3) {
     }
 }
 
-// Fun��o para determinar o tipo de tri�ngulo
+// Funcao para determinar o tipo de tri�ngulo
 const char* tipoTriangulo(double lado1, double lado2, double lado3) {
     if (ehTriangulo(lado1, lado2, lado3)) {
         if (lado1 == lado2 && lado2 == lado3) {
@@ -42,7 +42,7 @@ const char* tipoTriangulo(double lado1, double lado2, double lado3) {
 
 
 int main() {
-    //testando com numero positivo
+    //testando com numero negativo
     double lado1, lado2, lado3;
 
     // Solicitar ao usuario os tres lados do triangulo
