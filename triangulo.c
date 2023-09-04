@@ -5,50 +5,59 @@
 Write your code in this editor and press "Run" button to compile and execute it.
 
 *******************************************************************************/
+/*teste de caixa preta */
+/* verificar se o cÃ³digo funciona com uma entrada negativa ou com uma entrada positiva*/
+
+
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <stdbool.h>
 
-// Função para verificar se é possível formar um triângulo
+// Funcao para verificar se e possivel formar um triangulo
 bool ehTriangulo(double lado1, double lado2, double lado3) {
     if ((lado1 + lado2 > lado3) && (lado1 + lado3 > lado2) && (lado2 + lado3 > lado1)) {
-        return true; // É possível formar um triângulo
+        return true; // e possivel formar um triangulo
     } else {
-        return false; // Não é possível formar um triângulo
+        return false; // Nao e possivel formar um triangulo
     }
 }
 
-// Função para determinar o tipo de triângulo
+// Funï¿½ï¿½o para determinar o tipo de triï¿½ngulo
 const char* tipoTriangulo(double lado1, double lado2, double lado3) {
     if (ehTriangulo(lado1, lado2, lado3)) {
         if (lado1 == lado2 && lado2 == lado3) {
-            return "O triângulo é do tipo: Equilátero";
+            return "O triangulo e do tipo: Equilatero";
         } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-            return "O triângulo é do tipo: Isósceles";
+            return "O triangulo e do tipo: Isosceles";
         } else {
-            return "O triângulo é do tipo: Escaleno";
+            return "O triangulo e do tipo: Escaleno";
         }
     } else {
-        return "Não é Triângulo";
+        return "Nao e Triangulo";
     }
 }
 
+
+
 int main() {
+    //testando com numero positivo
     double lado1, lado2, lado3;
 
-    // Solicitar ao usuário os três lados do triângulo
-    printf("Digite o valor do primeiro lado: ");
+    // Solicitar ao usuario os tres lados do triangulo
+    printf("Digite o valor do primeiro lado: \n");
     scanf("%lf", &lado1);
 
-    printf("Digite o valor do segundo lado: ");
+    printf("Digite o valor do segundo lado: \n");
     scanf("%lf", &lado2);
 
-    printf("Digite o valor do terceiro lado: ");
+    printf("Digite o valor do terceiro lado: \n");
     scanf("%lf", &lado3);
 
-    // Chamar a função para determinar o tipo de triângulo e imprimir o resultado
+    // Chamar a funcao para determinar o tipo de triangulo e imprimir o resultado
     printf("%s\n", tipoTriangulo(lado1, lado2, lado3));
-
+    
+	system("pause");
     return 0;
 }
