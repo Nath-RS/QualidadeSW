@@ -1,0 +1,8 @@
+D:\newRepQS\testesQS\QualidadeSW\triangulo\bin\Debug\triangulo.exe.config
+D:\newRepQS\testesQS\QualidadeSW\triangulo\bin\Debug\triangulo.exe
+D:\newRepQS\testesQS\QualidadeSW\triangulo\bin\Debug\triangulo.pdb
+D:\newRepQS\testesQS\QualidadeSW\triangulo\obj\Debug\triangulo.csproj.AssemblyReference.cache
+D:\newRepQS\testesQS\QualidadeSW\triangulo\obj\Debug\triangulo.csproj.SuggestedBindingRedirects.cache
+D:\newRepQS\testesQS\QualidadeSW\triangulo\obj\Debug\triangulo.csproj.CoreCompileInputs.cache
+D:\newRepQS\testesQS\QualidadeSW\triangulo\obj\Debug\triangulo.exe
+D:\newRepQS\testesQS\QualidadeSW\triangulo\obj\Debug\triangulo.pdb
